@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sample multi-page Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+    rel="stylesheet">
+</head>
+    <style>
+        body {
+  font-family:'Arial'
+}
+    </style>
+<body>
+  <header>
+    <h1>My Sample Multi-page Site</h1>
+    <nav>
+        <ul>
+      <li><a href="index.html">Home</a></li>
+      <a href="about.html">About</a>
+      <li><a href="https://openai.com" target="_blank">Visit OpenAI</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+        <form method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Your full name"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com"><br><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="10" max="100" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" maxlength="500" required placeholder="Tell us about your project"></textarea><br><br>
+
+      <label for="topic">Topic:</label>
+      <select id="topic" name="topic" required>
+        <option value="">--Choose one--</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+      </select><br><br>
+
+      <fieldset>
+        <legend>Preferred Contact Method:</legend>
+        <input type="radio" id="emailRadio" name="contactMethod" value="email" required>
+        <label for="emailRadio">Email</label>
+        <input type="radio" id="phoneRadio" name="contactMethod" value="phone">
+        <label for="phoneRadio">Phone</label>
+      </fieldset><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <hr>
+  <footer>
+    <div class="container">
+      <p>&copy;2025 <span id="year-contact"></span>My Sample site. All rights reserved.</p>
+    </div>
+  </footer>
